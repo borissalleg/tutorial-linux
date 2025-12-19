@@ -1,0 +1,16 @@
+site_name: Tutorial Linux (Español)
+
+nav:
+  - Index : index.md
+  - Que es Linux : queeslinux.md
+  - Instalacion : instalacion.md
+  - Estructura Linux : estructura.md
+  - Archivos : archivos.md
+  - Usuarios : usuarios.md
+
+theme:
+  name: material
+  # Opcional: colores personalizados
+  palette:
+    primary: teal
+    accent: amber
