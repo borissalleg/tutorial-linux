@@ -4,22 +4,6 @@
 
 ---
 
-## 🔑 ¿Estoy en `/` o soy `root`?  
-⚠️ ¡Son dos cosas distintas! No las confundas.
-
-| Concepto | Cómo verificarlo | Prompt típico | ¿Es peligroso? |
-|---------|------------------|---------------|----------------|
-| **Directorio raíz (`/`)** | `pwd` → `/` | `user@host:/#` | ❌ No por sí solo — navegar es seguro |
-| **Usuario `root`** | `whoami` → `root` | `root@host:~#` | ⚠️ Sí, si ejecutas comandos destructivos sin cuidado |
-
-> ✅ En Docker: **por defecto eres `root` y empiezas en `/`** → entorno controlado y seguro para aprender.
-
----
-
-## 🗺️ Estructura del Directorio Raíz (`/`)  
-Ejecuta `ls -l /` para ver esto:
-
-
 
 ### 📁 Guía práctica por directorio
 
