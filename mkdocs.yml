@@ -5,12 +5,81 @@ nav:
   - Que es Linux : queeslinux.md
   - Instalacion : instalacion.md
   - Estructura Linux : estructura.md
+  - Directorios : directorios.md
   - Archivos : archivos.md
   - Usuarios : usuarios.md
 
 theme:
   name: material
   # Opcional: colores personalizados
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+ 
+  features:
+      - navigation.footer # Habilita el pie de página de navegación
+      - navigation.expand # Habilita la expansión de la navegación
+      - navigation.sections  # Habilita la generación automática de índices
+      - navigation.instant  # Habilita la navegación instantánea
+      - navigation.instant.progress # Habilita la barra de progreso de navegación instantánea
+      - navigation.instant.preview # Habilita la vista previa de navegación instantánea  
+      - navigation.tracking # Habilita el seguimiento de navegación
+      # - navigation.tabs # Habilita pestañas de navegación
+      - navigation.path # Habilita la visualización de la ruta de navegación
+      - navigation.indexes # Habilita índices de navegación
+
+      - content.tabs.link # Habilita enlaces en pestañas de contenido
+      - content.code.annotate # Habilita anotaciones en bloques de código
+      - content.tooltips  # Habilita tooltips en el contenido
+
+      - toc.integrate  # Habilita la integración de la tabla de contenido
+    
   palette:
-    primary: teal
-    accent: amber
+      # Dark Mode
+      - scheme: slate       
+        toggle:
+          icon: material/weather-sunny
+          name: Dark mode
+        primary: black
+        accent: light blue
+      # Light Mode
+      - scheme: default
+        toggle:
+          icon: material/weather-night
+          name: Light mode
+        primary: teal
+        accent: amber
+plugins:
+  - git-authors        
+
+extra_css:
+  - assets/stylesheets/styles.css
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      # emoji_index: !!python/name:pymdownx.emoji.gemoji
+      # emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid          
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+
+# extra:
+#   social:
+#     - icon: simple/youtube
+#       link: https://youtube.com/@borissalleg
+#     - icon: simple/linkedin
+#       link: https://linkedin.com/borissalleg
+      
+copyright: Copyright &copy; 2025 Boris Salleg

@@ -2,7 +2,7 @@
 
 ---
 
-## 🧠 **Imagina esto…**
+### 1️⃣**Imagina esto…**
 
 Piensa en una **computadora** como un auto 🚗:  
 - El **motor** es lo que realmente hace que funcione.  
@@ -15,64 +15,63 @@ Pues bien:
 
 ---
 
-## 🔧 **¿Qué es el *kernel* de Linux?**
+### 2️⃣**Entendiendo Linux …**
+???+ info " Documentacion Linux"
+    
+    === "**¿Qué es el *kernel* de Linux?**"
 
-El **kernel** (palabra que viene del inglés y significa *núcleo*) es el **corazón del sistema operativo**. Es un programa superpoderoso que: 
+        El **kernel** (palabra que viene del inglés y significa *núcleo*) es el **corazón del sistema operativo**. Es un programa superpoderoso que: 
 
-✅ Habla directamente con el hardware (procesador, memoria, disco, teclado, etc.).  
-✅ Gestiona quién usa qué (por ejemplo, que tu navegador y tu editor de texto no se peleen por la memoria).  
-✅ Controla el acceso a archivos y dispositivos.
+        ✅ Habla directamente con el hardware (procesador, memoria, disco, teclado, etc.).  
+        ✅ Gestiona quién usa qué (por ejemplo, que tu navegador y tu editor de texto no se peleen por la memoria).  
+        ✅ Controla el acceso a archivos y dispositivos.
 
-> ⚠️ **Importante**:  
-> Cuando decimos *"uso Linux"*, en realidad casi nunca usamos *solo* el kernel.  
-> Lo usamos **junto con muchas otras herramientas libres** (como Bash, GNU coreutils, etc.)… y eso completo se llama una **distribución de Linux**.
+        > ⚠️ **Importante**:  
+        > Cuando decimos *"uso Linux"*, en realidad casi nunca usamos *solo* el kernel.  
+        > Lo usamos **junto con muchas otras herramientas libres** (como Bash, GNU coreutils, etc.)… y eso completo se llama una **distribución de Linux**.
 
----
+    === "**¿Qué son las *distribuciones* (o *distros*)?**"
 
-## 📦 **¿Qué son las *distribuciones* (o *distros*)?**
+        Una **distribución de Linux** es como un **kit completo y listo para instalar** que incluye:  
 
-Una **distribución de Linux** es como un **kit completo y listo para instalar** que incluye:  
+        ✅- El kernel de Linux
 
-✅- El kernel de Linux
+        ✅- Programas básicos (copiar, mover, editar, navegar…) 
 
-✅- Programas básicos (copiar, mover, editar, navegar…) 
+        ✅- Un entorno gráfico (como el escritorio que ves: iconos, menús, ventanas)
 
-✅- Un entorno gráfico (como el escritorio que ves: iconos, menús, ventanas)
+        ✅- Una tienda de aplicaciones (¡sí, como la App Store, pero gratis! 🛒) 
 
-✅- Una tienda de aplicaciones (¡sí, como la App Store, pero gratis! 🛒) 
+        ✅- Herramientas para instalar, actualizar y mantener el sistema
 
-✅- Herramientas para instalar, actualizar y mantener el sistema
+        ---
 
----
+    === "Algunas distribuciones famosas "
 
-### 🌍 Algunas distribuciones famosas (y qué las hace especiales)
+        | Distribución | ¿Para quién es ideal? | Características clave |
+        |--------------|------------------------|------------------------|
+        | **Ubuntu** | 🚀 Principiantes, estudiantes, desarrolladores | Muy amigable, gran comunidad, actualizaciones frecuentes, WSL compatible. ¡La más popular para empezar! |
+        | **Debian** | 🛡️ Usuarios que buscan estabilidad y control | Base de Ubuntu. Más lento en actualizaciones, pero *muy* confiable. Ideal para servidores. |
+        | **Fedora** | 🧪 Entusiastas de tecnología y devs avanzados | Usa lo más nuevo en software (como versiones frescas de Python, kernel, etc.). Patrocinada por Red Hat. |
+        | **Linux Mint** | 🍃 Ex-usuarios de Windows que quieren algo familiar | Parece Windows, pero es Linux. Muy intuitivo y sin sorpresas. |
+        | **Arch Linux / Manjaro** | 🛠️ Aprendices curiosos que quieren entender *cómo funciona todo* | Arch es para quienes quieren armar su sistema “pieza por pieza”. Manjaro es su versión más amigable. |
 
-| Distribución | ¿Para quién es ideal? | Características clave |
-|--------------|------------------------|------------------------|
-| **Ubuntu** | 🚀 Principiantes, estudiantes, desarrolladores | Muy amigable, gran comunidad, actualizaciones frecuentes, WSL compatible. ¡La más popular para empezar! |
-| **Debian** | 🛡️ Usuarios que buscan estabilidad y control | Base de Ubuntu. Más lento en actualizaciones, pero *muy* confiable. Ideal para servidores. |
-| **Fedora** | 🧪 Entusiastas de tecnología y devs avanzados | Usa lo más nuevo en software (como versiones frescas de Python, kernel, etc.). Patrocinada por Red Hat. |
-| **Linux Mint** | 🍃 Ex-usuarios de Windows que quieren algo familiar | Parece Windows, pero es Linux. Muy intuitivo y sin sorpresas. |
-| **Arch Linux / Manjaro** | 🛠️ Aprendices curiosos que quieren entender *cómo funciona todo* | Arch es para quienes quieren armar su sistema “pieza por pieza”. Manjaro es su versión más amigable. |
+        > 💡 **Dato curioso**:  
+        > Android (el sistema de tu celular 📱) **también usa el kernel de Linux**… ¡así que ya has usado Linux sin saberlo! 😮
 
-> 💡 **Dato curioso**:  
-> Android (el sistema de tu celular 📱) **también usa el kernel de Linux**… ¡así que ya has usado Linux sin saberlo! 😮
+    === " ¿Por qué es tan importante que Linux sea *libre* y *open source*?"
 
----
+      - ✅ **Libre** = Puedes usarlo, copiarlo, modificarlo y compartirlo **sin pagar licencia**.  
+      - ✅ **Open source** = El código está abierto para que cualquiera lo revise, mejore o corrija.  
+      - 👥 Esto crea una **comunidad global** de miles de personas que colaboran para hacerlo mejor (¡como Wikipedia, pero para sistemas operativos!).
 
-## 🤝 ¿Por qué es tan importante que Linux sea *libre* y *open source*?
+      > 🌎 Ejemplo real:  
+      > Empresas como Google, Amazon y Netflix usan Linux en sus servidores…  
+      > porque es **rápido, seguro, estable y gratis**. ¡Millones de sitios web corren en Linux!
 
-- ✅ **Libre** = Puedes usarlo, copiarlo, modificarlo y compartirlo **sin pagar licencia**.  
-- ✅ **Open source** = El código está abierto para que cualquiera lo revise, mejore o corrija.  
-- 👥 Esto crea una **comunidad global** de miles de personas que colaboran para hacerlo mejor (¡como Wikipedia, pero para sistemas operativos!).
+      ---
 
-> 🌎 Ejemplo real:  
-> Empresas como Google, Amazon y Netflix usan Linux en sus servidores…  
-> porque es **rápido, seguro, estable y gratis**. ¡Millones de sitios web corren en Linux!
-
----
-
-## 🎯 En resumen (para tu cuaderno 📓):
+### 3️⃣**En resumen** 
 
 | Concepto | ¿Qué es? | Analogía |
 |---------|----------|----------|
