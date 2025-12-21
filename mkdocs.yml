@@ -50,7 +50,7 @@ theme:
         primary: teal
         accent: amber
 plugins:
-  - git-authors        
+  # - git-authors        
 
 extra_css:
   - assets/stylesheets/styles.css

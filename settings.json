@@ -1,5 +1,6 @@
 {
   
+  "python.defaultInterpreterPath": "/home/forsaken/anaconda3/envs/Python313/bin/python",
   "python.terminal.activateEnvironment": true,
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
