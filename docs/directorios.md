@@ -4,7 +4,7 @@ Esta guía introduce los comandos esenciales del sistema de archivos en Linux y 
 
 <!-- ![estrucutra](https://www.servidoresadmin.com/wp-content/uploads/2020/06/carpetas-1024x680.jpg) -->
 
- 📁**¿Qué es un directorio en Linux?** 
+### 1️⃣**¿Qué es un directorio en Linux? 📁** 
 > Un **directorio** es una *estructura lógica* que organiza archivos y otros directorios, similar a una **carpeta** en otros sistemas. Pero en Linux, **todo es un archivo o un directorio**, incluso dispositivos (`/dev/sda`), procesos (`/proc/123`) y configuraciones (`/etc/passwd`).  
 > La raíz de esta jerarquía es `/` — el único directorio que no tiene padre.
 
@@ -56,20 +56,21 @@ La estructura de directorios en Linux es una organización jerárquica en forma 
 
         ---
 
+        ### 2️⃣**Practica Linux …**
         === "▶ Iniciar el entorno común"
 
-            ```bash
-            docker run -it --rm --name lab-linux alpine:3.20 /bin/sh
-            ```
+                ```bash
+                docker run -it --rm --name lab-linux alpine:3.20 /bin/sh
+                ```
 
-            > 💡 **¿Qué ves?**  
-            > Un prompt como `/ #` → estás en la **raíz del sistema**, como superusuario.  
-            > > 🐳 *Docker Tip*: Si cometes un error, `exit` lo borra todo. ¡Sin daños colaterales!*
+                > 💡 **¿Qué ves?**  
+                > Un prompt como `/ #` → estás en la **raíz del sistema**, como superusuario.  
+                > > 🐳 *Docker Tip*: Si cometes un error, `exit` lo borra todo. ¡Sin daños colaterales!*
 
         === "▶ Listar directorios con `ls`"
             ls` (**L**i**s**t) es un comando fundamental en sistemas Unix y Linux que **enumera los archivos y directorios** contenidos en una ubicación específica del sistema de archivos.
 
-            #### 🔹 ¿Para qué sirve?
+            #### 🔹 **LS** 
             - ✅ **Explorar la estructura de directorios**: ver qué archivos y subdirectorios existen.
             - ✅ **Inspeccionar metadatos**: permisos, propietario, tamaño, fecha de modificación (con `-l`).
             - ✅ **Identificar tipos de archivos**: directorios, ejecutables, enlaces simbólicos, etc.
@@ -78,7 +79,7 @@ La estructura de directorios en Linux es una organización jerárquica en forma 
 
             Por defecto, `ls` opera sobre el **directorio actual** si no se especifica una ruta. Es uno de los primeros comandos que todo usuario de terminal debe dominar.
 
-            #### ▶️ `ls` — Vistazo al sistema
+            ▶️ `ls` — Vistazo al sistema
             ```bash
             ls
             ```
@@ -88,7 +89,7 @@ La estructura de directorios en Linux es una organización jerárquica en forma 
             ```
             > 🧠 **En tu mente**: Piensa en `/` como el *lobby* de un edificio. Cada nombre es una puerta a una zona diferente.
 
-            #### ▶️ `ls -F` — Clasifica lo que ves
+            ▶️ `ls -F` — Clasifica lo que ves
             ```bash
             ls -F
             ```
@@ -98,7 +99,7 @@ La estructura de directorios en Linux es una organización jerárquica en forma 
             > ✅ `script.sh*` → ejecutable  
             > ❌ No hay `*` ni `@` aquí → Alpine es minimalista.
 
-            #### ▶️ `ls -a` — Revela lo oculto
+            ▶️ `ls -a` — Revela lo oculto
             ```bash
             ls -a
             ```
@@ -107,7 +108,7 @@ La estructura de directorios en Linux es una organización jerárquica en forma 
             > - `.` = "esta habitación"  
             > - `..` = "el pasillo que me trajo aquí"  
 
-            #### ▶️ `ls -l` — Los detalles importan
+            ▶️ `ls -l` — Los detalles importan
             ```bash
             ls -l
             ```
@@ -155,8 +156,9 @@ La estructura de directorios en Linux es una organización jerárquica en forma 
           
 
         === "▶  Navegar y crear directorios"
-
+            
             === "`pwd` — ¿Dónde estoy?"
+                #### 🔹 PWD
                 pwd (Print Working Directory) es un comando estándar de Unix/Linux que muestra la ruta absoluta del directorio actual (también llamado directorio de trabajo o current working directory).
                 🔹 ¿Para qué sirve?
 
@@ -176,6 +178,7 @@ La estructura de directorios en Linux es una organización jerárquica en forma 
                 | `-L` | (**logical**) Comportamiento por defecto: muestra la ruta tal como se navegó (con enlaces). | Igual que `pwd` solo |
 
             === "`cd` — Moverse con confianza"
+                #### 🔹CD
                 El comando para navegar entre directorios en la terminal de Linux es cd (change directory). 
                 
                 Es uno de los comandos más usados y esencial para moverse por el sistema de archivos.
@@ -208,7 +211,7 @@ La estructura de directorios en Linux es una organización jerárquica en forma 
                 | `cd ~` | Ir al *home* del usuario actual (equivalente a `cd`). | `cd ~` → `/home/ronald` |
                 | `cd ~usuario` | Ir al *home* de otro usuario (si tienes permisos). | `cd ~diana` → `/home/diana` |
 
-                🔹 **Rutas:** absolutas vs. relativas
+                #### 🔹**Rutas:** absolutas vs. relativas
 
                 **Ruta absoluta:** comienza con / → siempre se refiere a la misma ubicación, sin importar dónde estés.
                 Ejemplo
@@ -220,7 +223,7 @@ La estructura de directorios en Linux es una organización jerárquica en forma 
                 ```bash
                 si estás en /home/ronald, cd documentos equivale a cd /home/ronald/documentos.
                 ```
-                #### ▶️ Rutas relativas en acción
+                ▶️ Rutas relativas en acción
                 ```bash
                 cd taller/src
                 touch main.py
@@ -230,6 +233,7 @@ La estructura de directorios en Linux es una organización jerárquica en forma 
                 ```
 
             === "`mkdir -p` — Construye rutas completas"
+                #### 🔹MKDIR
 
                 El comando principal para crear directorios en Linux es mkdir (make directory). 
                 Permite generar uno o varios directorios, incluso con estructuras anidadas complejas, en una sola instrucción.
@@ -297,6 +301,7 @@ La estructura de directorios en Linux es una organización jerárquica en forma 
                 
 
             === "Eliminar con intención "
+                #### 🔹RMDIR
 
                 En Linux, la eliminación de directorios depende de si están vacíos o contienen archivos/subdirectorios. 
                 

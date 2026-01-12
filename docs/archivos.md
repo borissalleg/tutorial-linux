@@ -1,7 +1,7 @@
 # 📄 **Archivos en Linux**
 ### *Fundamentos, Creación y Práctica*
 
-![sistema_archivo](https://es.easeus.com/images/en/screenshot/partition-manager/file-system-work-flow.png)
+<!-- ![sistema_archivo](https://es.easeus.com/images/en/screenshot/partition-manager/file-system-work-flow.png) -->
 
                 
 *Enfoque 100 % práctico utilizando Docker*
@@ -219,6 +219,7 @@
     > - **Tercer bloque** (`rwx`): permisos de **otros** (todos los demás)
 
     Cada letra representa:
+    
     - `r` = **lectura** → ver contenido (`cat`, `cp`, `ls`)  
     - `w` = **escritura** → modificar o borrar (`echo >`, `rm`, `mv`)  
     - `x` = **ejecución** → lanzar como programa (`./script.sh`)
