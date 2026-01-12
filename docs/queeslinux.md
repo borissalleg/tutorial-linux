@@ -84,3 +84,14 @@ Pues bien:
 > ✅ **Ahora ya sabes**:  
 > *“Linux” no es un solo programa, sino una familia de sistemas operativos libres, construidos alrededor del mismo núcleo (kernel), y adaptados para todo tipo de usuarios.*  
 > Y lo mejor: **puedes probarlo sin riesgo** (con una máquina virtual o WSL)… ¡como un *test drive* tecnológico! 🚀
+
+
+    El intérprete de comandos espera que le indiquemos una línea de órdenes para ejecutar la tarea que le hayamos indicado
+
+    La sintaxis básica de una orden es COMANDO [OPCIONES] [ARGUMENTOS]
+
+    Con el comando le indico qué tiene que hacer, en las opciones cómo debe hacerlo y con los parámetros le indico los elementos donde tendrá que realizar la acción
+
+    Para diferenciar entre las partes de una linea de órdenes se utilizan los espacios
+
+    Puedo obtener ayuda de cualquier comando usando man nombre_del_comando

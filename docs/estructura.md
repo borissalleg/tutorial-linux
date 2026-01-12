@@ -31,32 +31,8 @@ En distribuciones minimalistas como **Alpine Linux**, algunos directorios pueden
 
     ---
 
-=== " 🗂️ Estructura Estándar de Directorios en Linux (FHS)"
-
-    | Directorio       | Descripción                                                                                          | Contenido típico                                                                 |
-    |------------------|------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-    | `/`              | **Raíz del sistema de archivos**. Punto de partida de toda la jerarquía.                             | Subdirectorios esenciales (`bin`, `etc`, `home`, `usr`, etc.)                   |
-    | `/bin`           | **Binarios esenciales para todos los usuarios** (disponibles en modo de recuperación).              | `sh`, `ls`, `cp`, `mv`, `rm`, `cat`, `echo`, `grep`, `mount`                     |
-    | `/sbin`          | **Binarios esenciales para el administrador del sistema** (requieren privilegios).                   | `fdisk`, `ifconfig`, `iptables`, `reboot`, `shutdown`, `init`                   |
-    | `/etc`           | **Archivos de configuración del sistema** (no binarios, no variables en tiempo de ejecución).        | `passwd`, `group`, `hosts`, `resolv.conf`, `nginx/`, `ssh/`, `apk/repositories` |
-    | `/home`          | Directorios personales de los usuarios (excepto `root`).                                             | `/home/alice`, `/home/bob` → cada uno con `~/.bashrc`, `Documents`, etc.        |
-    | `/root`          | Directorio personal del usuario `root`.                                                              | `~/.profile`, scripts de administración                                          |
-    | `/tmp`           | Archivos temporales (borrados al reiniciar, en muchas configuraciones).                              | Archivos de procesos efímeros, descargas parciales                              |
-    | `/var`           | **Datos variables**: logs, colas, cachés, bases de datos.                                            | `/var/log`, `/var/cache`, `/var/lib`, `/var/spool`                              |
-    | `/usr`           | **Recursos de usuario**: binarios no esenciales, bibliotecas, documentación, headers.               | `/usr/bin`, `/usr/lib`, `/usr/share`, `/usr/include`                            |
-    | `/usr/bin`       | Binarios de usuario (la mayoría de comandos no críticos).                                            | `git`, `curl`, `python3`, `nano`, `docker`                                      |
-    | `/usr/sbin`      | Binarios administrativos no esenciales.                                                              | `httpd`, `sshd`, `crond`                                                         |
-    | `/usr/local`     | Software instalado localmente (por el admin, no por gestor de paquetes).                             | `/usr/local/bin`, `/usr/local/etc`                                               |
-    | `/opt`           | Paquetes de software adicionales (aplicaciones grandes, autocontenidas).                             | `/opt/google/chrome`, `/opt/jdk`                                                 |
-    | `/proc`          | **Sistema de archivos virtual**: interfaz al kernel (procesos, hardware, parámetros en tiempo real).| `/proc/cpuinfo`, `/proc/meminfo`, `/proc/1/` (PID 1)                            |
-    | `/sys`           | **Sistema de archivos virtual**: información y control de dispositivos y drivers (sysfs).            | `/sys/class`, `/sys/devices`, `/sys/kernel`                                      |
-    | `/dev`           | Archivos de dispositivos (nodos especiales gestionados por el kernel).                               | `stdin`, `stdout`, `sda`, `tty`, `null`, `zero`                                 |
-    | `/run`           | Datos volátiles en tiempo de ejecución (PID files, sockets, locks — persisten solo mientras corre). | `/run/docker.sock`, `/run/lock`, `/run/user/1000`                               |
-    | `/mnt`           | Punto de montaje temporal para sistemas de archivos (uso manual).                                    | `/mnt/usb`, `/mnt/nfs`                                                           |
-    | `/media`         | Puntos de montaje para medios extraíbles (gestionado automáticamente por el sistema).                | `/media/user/USB_DRIVE`, `/media/cdrom`                                          |
-    | `/lib` y `/lib64`| **Bibliotecas compartidas esenciales** necesarias para ejecutar binarios en `/bin` y `/sbin`.        | `libc.so`, `ld-musl-x86_64.so.1` (en Alpine), módulos del kernel                 |
-
-    ---
+=== " 🗂️ Estructura Estándar de Directorios en Linux "
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TEZ26QWo9Yk?si=w411BXrlNpoQWMDn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
